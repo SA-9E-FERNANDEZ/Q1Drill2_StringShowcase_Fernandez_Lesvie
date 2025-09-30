@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Drill 2: String Showcase</title>
+  <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+  <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+  <style>
+    body {
+      font-family: "Trebuchet MS", sans-serif;
+      background: linear-gradient(135deg, #ffe4ec, #fce4ec);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: #fff;
+      padding: 25px 30px;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+    }
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+      color: #c2185b;
+    }
+    .pfp {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #f8bbd0;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    label {
+      font-weight: bold;
+      margin-top: 12px;
+      display: block;
+      color: #880e4f;
+      text-align: left;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-top: 5px;
+    }
+    button {
+      margin-top: 18px;
+      width: 100%;
+      padding: 10px;
+      background: linear-gradient(135deg, #f48fb1, #f06292);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: linear-gradient(135deg, #ec407a, #ad1457);
+    }
+    #output {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #ffc1e3, #f8bbd0);
+      color: #4a0e2e;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      font-size: 1rem;
+      line-height: 1.6;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Student Information</h1>
+ 
+    <img src="meow.jpg" alt="Profile Picture" class="pfp">
+
+    <label for="name">Your Name</label>
+    <input id="name" type="text" placeholder="e.g., Sofia Dela Cruz" />
+
+    <label for="age">Your Age</label>
+    <input id="age" type="number" placeholder="e.g., 15" />
+
+    <label for="school">Your School</label>
+    <input id="school" type="text" placeholder="e.g., Emerald High School" />
+
+    <button id="submit-btn">Show My Profile</button>
+
+    <div id="output"></div>
+  </div>
+
+ <py-config>
+  [[fetch]]
+  files = ["SA_ICT10_Q1Drill2_Fernandez_Lesvie%20Mae.py"]
+</py-config>
+
+<script type="py" src="./SA_ICT10_Q1Drill2_Fernandez_Lesvie Mae.py"></script>
+
+
+</body>
+</html>
+
